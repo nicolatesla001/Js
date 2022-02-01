@@ -137,8 +137,12 @@ console.log(person)
 // let age = prompt('Вік');
 //
 // console.log(`Вітаю ${name} ${middle_Name}. Тобі ${age} роки.`);
+// alert(`Тебе звати ${name} ${midlName}.Тобі ${age}`)
+// let tru=confirm(`Ти ${name} ${midlName}, тобі ${age}?`)
+// alert(`Супер`)
 //
-//
+
+
 // // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
 // let a = 100
 // let b = '100'
@@ -182,8 +186,13 @@ console.log(123 == '123')
 // document.write(str / 2 + "<br/>");10
 
 
-
-
+let name=prompt("Імя")
+let midlName=prompt('По-батькові?')
+let age=prompt(`Вік?`)
+alert(`Тебе звати ${name} ${midlName}.Тобі ${age}`)
+let tru=confirm(`Ти ${name} ${midlName}, тобі ${age}?`)
+alert(`Супер`)
+console.log(`Тебе звати ${name} ${midlName}?`)
 
 
 
