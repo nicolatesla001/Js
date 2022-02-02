@@ -166,6 +166,7 @@ console.log(typeof c)
 // 123 ? '123' -> false
 // 123 ? '123' -> true
 
+
 console.log(5 < 6)
 console.log(5 === 6)
 console.log(5 > 6)
