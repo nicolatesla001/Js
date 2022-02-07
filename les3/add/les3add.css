@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    margin: 0 auto;
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.post-card{
+    width: 250px;
+    height: 220px;
+    box-sizing: border-box;
+    background-color: #6496ec;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
