@@ -115,6 +115,100 @@
 // let filter=arr.filter((some)=>{return some.monthDuration>5})
 // console.log(filter)
 
+// kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+
+// - Знайти та вивести довижину настипних стрінгових значень
+// 'hello world', 'lorem ipsum', 'javascript is cool'
+// let h='hello world'
+// // let h1=h.length
+// // console.log(h1)
+// //
+// // let l='lorem ipsum'
+// // let l1=l.length
+// // console.log(l1)
+// //
+// // let j='javascript is cool'
+// // console.log(j.length)
+
+// - Перевести до великого регістру наступні стрінгові значення
+// 'hello world', 'lorem ipsum', 'javascript is cool'
+// let h='hello world'
+// console.log(h.toUpperCase())
+// let l='lorem ipsum'
+// console.log(l.toUpperCase())
+// let j='javascript is cool'
+// console.log(j.toUpperCase())
+//
+// console.log(h.toLowerCase())
+//
+// console.log(l.toLowerCase())
+//
+// console.log(j.toLowerCase())
+
+// Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
+
+// let str = ' dirty string   '
+// console.log(str.trim())
+
+// - Напишіть функцію delete_characters(str, length), яка повертає підрядок, що складається із зазначеної кількості символів.
+//     let str = 'Каждый охотник желает знать';
+// document.writeln(delete_characters(str, 7)); // Каждый
+
+// let str = 'Каждый охотник желает знать'
+// let sub=(num1,num2)=>{
+//     return str.substring(num1,num2)
+//
+// }
+// console.log(sub(0,7))
+
+// - Напишіть функцію insert_dash(str), яка приймає рядок str як аргумент і вставляє тире (-) між словами.
+//     При цьому всі символи рядка необхідно перевести у верхній регістр.
+//     let str = "HTML JavaScript PHP";
+// document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
+//
+// let insertDash=(str)=>{
+//     let x=str.split(' ').join('-').toUpperCase()
+//     return x
+// }
+// let str = "HTML JavaScript PHP";
+// document.write(insertDash(str))
+
+// - Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка з нижнього регістру у верхній.
+//
+// let first=(str)=>{
+//     return str[0].toUpperCase()+str.slice(1)
+// }
+// let str='hello okten'
+// console.log(first(str))
+
+// - Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
+// let capitalize=(str)=>{
+//     return str.split(' ').map(item=>item.charAt(0).toUpperCase()+item.slice(1)).join(' ')
+// }
+// let str='hello okten i am nico'
+// console.log(capitalize(str))
 
 
+// - Дано список імен.
+//     let n1 = 'Harry..Potter'
+// let n2 = 'Ron---Whisley'
+// let n3 = 'Hermione__Granger'
+// Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
+// let n1 = 'Harry Potter'
+// let n2 = 'Ron Whisley'
+// let n3 = 'Hermione Granger'
 
+// let x=(str,sym)=>{
+//     let arr=[]
+//     if (str.includes(sym)){
+//        let x=str.split(sym)
+//        x.forEach(item=>{
+//            if (item)arr.push(item)
+//        })
+//         console.log(arr.join(' '))
+//     }
+// }
+// let n1 = 'Harry..Potter'
+// let n2 = 'Ron---Whisley'
+// let n3 = 'Hermione__Granger'
+// x(n2,'-')

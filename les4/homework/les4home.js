@@ -93,21 +93,21 @@
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.' +
 // ' Для кожного об'єкту окремий блок.
 
-let array= [ {id:1, name:'Nico', age:24},
-    {id:2, name:'Oleg', age:21},
-    {id:3, name:'Olya', age:28},
-    {id:4, name:'Vasya', age:23},
-    {id:5, name:'Igor', age:34}]
-
-function objCreator(array){
-    for (const arrayElement of array) {
-        document.write(`<div>
-${arrayElement.id} ${arrayElement.name} ,age - ${arrayElement.age}
-</div>`)
-        
-    }
-}
-objCreator(array)
+// let array= [ {id:1, name:'Nico', age:24},
+//     {id:2, name:'Oleg', age:21},
+//     {id:3, name:'Olya', age:28},
+//     {id:4, name:'Vasya', age:23},
+//     {id:5, name:'Igor', age:34}]
+//
+// function objCreator(array){
+//     for (const arrayElement of array) {
+//         document.write(`<div>
+// ${arrayElement.id} ${arrayElement.name} ,age - ${arrayElement.age}
+// </div>`)
+//
+//     }
+// }
+// objCreator(array)
 
 
 
