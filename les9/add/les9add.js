@@ -17,7 +17,7 @@ let usersList = [
         phone: '1-770-736-8031 x56442',
         website: 'hildegard.org',
         company: {
-            namee: 'Romaguera-Crona',
+            name: 'Romaguera-Crona',
             catchPhrase: 'Multi-layered client-server neural-net',
             bs: 'harness real-time e-markets'
         }
@@ -40,7 +40,7 @@ let usersList = [
         phone: '010-692-6593 x09125',
         website: 'anastasia.net',
         company: {
-            namee: 'Deckow-Crist',
+            name: 'Deckow-Crist',
             catchPhrase: 'Proactive didactic contingency',
             bs: 'synergize scalable supply-chains'
         }
@@ -63,7 +63,7 @@ let usersList = [
         phone: '1-463-123-4447',
         website: 'ramiro.info',
         company: {
-            namee: 'Romaguera-Jacobson',
+            name: 'Romaguera-Jacobson',
             catchPhrase: 'Face to face bifurcated interface',
             bs: 'e-enable strategic applications'
         }
@@ -86,7 +86,7 @@ let usersList = [
         phone: '493-170-9623 x156',
         website: 'kale.biz',
         company: {
-            namee: 'Robel-Corkery',
+            name: 'Robel-Corkery',
             catchPhrase: 'Multi-tiered zero tolerance productivity',
             bs: 'transition cutting-edge web services'
         }
@@ -109,7 +109,7 @@ let usersList = [
         phone: '(254)954-1289',
         website: 'demarco.info',
         company: {
-            namee: 'Keebler LLC',
+            name: 'Keebler LLC',
             catchPhrase: 'User-centric fault-tolerant solution',
             bs: 'revolutionize end-to-end systems'
         }
@@ -132,7 +132,7 @@ let usersList = [
         phone: '1-477-935-8478 x6430',
         website: 'ola.org',
         company: {
-            namee: 'Considine-Lockman',
+            name: 'Considine-Lockman',
             catchPhrase: 'Synchronised bottom-line interface',
             bs: 'e-enable innovative applications'
         }
@@ -155,7 +155,7 @@ let usersList = [
         phone: '210.067.6132',
         website: 'elvis.io',
         company: {
-            namee: 'Johns Group',
+            name: 'Johns Group',
             catchPhrase: 'Configurable multimedia task-force',
             bs: 'generate enterprise e-tailers'
         }
@@ -178,7 +178,7 @@ let usersList = [
         phone: '586.493.6943 x140',
         website: 'jacynthe.com',
         company: {
-            namee: 'Abernathy Group',
+            name: 'Abernathy Group',
             catchPhrase: 'Implemented secondary concept',
             bs: 'e-enable extensible e-tailers'
         }
@@ -201,7 +201,7 @@ let usersList = [
         phone: '(775)976-6794 x41206',
         website: 'conrad.com',
         company: {
-            namee: 'Yost and Sons',
+            name: 'Yost and Sons',
             catchPhrase: 'Switchable contextually-based project',
             bs: 'aggregate real-time technologies'
         }
@@ -224,7 +224,7 @@ let usersList = [
         phone: '024-648-3804',
         website: 'ambrose.net',
         company: {
-            namee: 'Hoeger LLC',
+            name: 'Hoeger LLC',
             catchPhrase: 'Centralized empowering task-force',
             bs: 'target end-to-end models'
         }
@@ -232,89 +232,181 @@ let usersList = [
 ];
 // Створити під кожен елемент окремий блок.
 //     В цьому блоці, під кожну властивість, та властивості внутрішніх об'єктів створити свої окремі блок.
-for (const listEl of usersList) {
-    let divWraper = document.createElement('div')
+// for (const usersListElement of usersList) {
+//     let divWraper = document.createElement('div')
+//
+//     let id = document.createElement('div')
+//     id.innerText = `ID ${usersListElement.id}`
+//
+//     let nam = document.createElement('div')
+//     nam.innerText = `Name ${usersListElement.name}`
+//
+//     let username = document.createElement('div')
+//     username.innerText = `User Name ${usersListElement.username}`
+//
+//     let email = document.createElement('div')
+//     email.innerText = `Email ${usersListElement.email}`
+//
+//     let address = document.createElement('div')
+//
+//     for (const addressKey in usersListElement.address) {
+//
+//         let street = document.createElement('div')
+//         street.innerText = `${usersListElement.address.street}`
+//
+//
+//         let suite = document.createElement('div')
+//         suite.innerText = `${usersListElement.address.suite}`
+//
+//
+//         let city = document.createElement('div')
+//         city.innerText = `${usersListElement.address.city}`
+//
+//
+//         let zipcode = document.createElement('div')
+//         zipcode.innerText = `${usersListElement.address.zipcode}`
+//
+//
+//         let geo = document.createElement('div')
+//
+//
+//         for (const geoElement in usersListElement.address.geo) {
+//             let lat = document.createElement('div')
+//             lat.innerText = `${usersListElement.address.geo.lat}`
+//             // geo.append(lat)
+//
+//             let lng = document.createElement('div')
+//             lng.innerText = `${usersListElement.address.geo.lng}`
+//             // geo.append(lng)
+//             geo.append(lat)
+//             geo.append(lng)
+//
+//
+//         }
+// address.append(geo)
+//
+//     }
+//
+//     let phone = document.createElement('div')
+//     phone.innerText = `Phone ${usersListElement.phone}`
+//
+//     let website = document.createElement('div')
+//     website.innerText = `Website ${usersListElement.website}`
+//
+//     let company = document.createElement('div')
+//
+//     for (const companyElement in usersListElement.company) {
+//
+//         let comName = document.createElement('div')
+//         comName.innerText = `${companyElement.name}`
+//         // company.append(comName)
+//
+//         let catchPhrase = document.createElement('div')
+//         catchPhrase.innerText = `${companyElement.catchPhrase}`
+//         // company.append(catchPhrase)
+//
+//         let bs = document.createElement('div')
+//         bs.innerText = `${companyElement.bs}`
+//         // company.append(bs)
+// company.append(comName)
+// company.append(catchPhrase)
+// company.append(bs)
+//     }
+//
+//     document.body.append(divWraper)
+//     divWraper.append(id)
+//     divWraper.append(nam)
+//     divWraper.append(username)
+//     divWraper.append(email)
+//     divWraper.append(address)
+//     divWraper.append(phone)
+//     divWraper.append(website)
+//     divWraper.append(company)
+//
+// }
 
-    let id = document.createElement('div')
-    id.innerText = `ID ${listEl.id}`
 
-    let nam = document.createElement('div')
-    nam.innerText = `Name ${listEl.name}`
-
-    let username = document.createElement('div')
-    username.innerText = `User Name ${listEl.username}`
-
-    let email = document.createElement('div')
-    email.innerText = `Email ${listEl.email}`
-
-    let address = document.createElement('div')
-
-    for (const adrs in listEl.address) {
-        let street = document.createElement('div')
-        street.innerText = `${listEl.address.street}`
-        address.append(street)
-
-        let suite = document.createElement('div')
-        suite.innerText = `${listEl.address.suite}`
-        address.append(suite)
-
-        let city = document.createElement('div')
-        city.innerText = `${listEl.address.city}`
-        address.append(city)
-
-        let zipcode = document.createElement('div')
-        zipcode.innerText = `${listEl.address.zipcode}`
-        address.append(zipcode)
-
-        let geo = document.createElement('div')
-
-        for (const geoElement in listEl.address) {
-            let lat = document.createElement('div')
-            lat.innerText = `${listEl.address.geo.lat}`
-            geo.append(lat)
-
-            let lng = document.createElement('div')
-            lng.innerText = `${listEl.address.geo.lng}`
-            geo.append(lng)
+for (let usersListElement of usersList) {
+    let wrap = document.createElement('div');
 
 
-        }
+    let id = document.createElement('div');
+    id.innerText = usersListElement.id;
+
+    let name = document.createElement('div');
+    name.innerText = usersListElement.name
+
+    let username = document.createElement('div');
+    username.innerText = usersListElement.username;
+
+    let email = document.createElement('div');
+    email.innerText = usersListElement.email;
+
+    let address = document.createElement('div');
+
+    let street =document.createElement('div');
+    street.innerText = usersListElement.address.street;
+
+    let suite =document.createElement('div');
+    suite.innerText = usersListElement.address.suite;
+
+    let city =document.createElement('div');
+    city.innerText = usersListElement.address.city;
+
+    let zipcode =document.createElement('div');
+    zipcode.innerText = usersListElement.address.zipcode;
+
+    let geo =document.createElement('div');
+
+    let lat = document.createElement('div');
+
+    lat.innerText = usersListElement.address.geo.lat;
+
+    let lng = document.createElement('div');
+    lng.innerText = usersListElement.address.geo.lng;
+
+    let phone = document.createElement('div');
+    phone.innerText = usersListElement.phone;
+
+    let website = document.createElement('div');
+    website.innerHTML = `<a href="${usersListElement.website}">${usersListElement.website}</a>`;
+
+    let company = document.createElement('div');
+    let nameCom = document.createElement('div');
+
+    nameCom.innerText = usersListElement.company.name;
+    let catchPhrase = document.createElement('div');
+
+    catchPhrase.innerText = usersListElement.company.catchPhrase;
+    let bs = document.createElement('div');
+
+    bs.innerText = usersListElement.company.bs;
+
+    let hr=document.createElement('hr')
 
 
-    }
+    document.body.append(wrap)
+    wrap.append(id)
+    wrap.append(name)
+    wrap.append(username)
+    wrap.append(email)
+    wrap.append(address)
+    wrap.append(phone)
+    wrap.append(website)
+    wrap.append(company)
+    wrap.append(hr)
 
-    let phone = document.createElement('div')
-    phone.innerText = `Phone ${listEl.phone}`
+    address.append(street)
+    address.append(suite)
+    address.append(city)
+    address.append(zipcode)
+    address.append(geo)
 
-    let website = document.createElement('div')
-    website.innerText = `Website ${listEl.website}`
+    geo.append(lat)
+    geo.append(lng)
 
-    let company = document.createElement('div')
-
-    for (const companyElement in listEl.company) {
-
-        let comName = document.createElement('div')
-        comName.innerText = `${companyElement.namee}`
-        company.append(comName)
-
-        let catchPhrase = document.createElement('div')
-        catchPhrase.innerText = `${companyElement.catchPhrase}`
-        company.append(catchPhrase)
-
-        let bs = document.createElement('div')
-        bs.innerText = `${companyElement.bs}`
-        company.append(bs)
-
-    }
-
-    document.body.append(divWraper)
-    divWraper.append(id)
-    divWraper.append(nam)
-    divWraper.append(username)
-    divWraper.append(email)
-    divWraper.append(address)
-    divWraper.append(phone)
-    divWraper.append(website)
-    divWraper.append(company)
-
+    company.append(nameCom)
+    company.append(catchPhrase)
+    company.append(bs)
 }
+

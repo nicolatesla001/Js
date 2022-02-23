@@ -144,43 +144,43 @@ let coursesArray = [
 //     в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png
 //
-// for (const Element of coursesArray) {
-//     let divWraper=document.createElement('div')
-//     divWraper.classList.add('wraper')
-//
-//
-//     let tit=document.createElement('h3')
-//     tit.innerText=`${Element.title}`
-//
-//     let monHou=document.createElement('div')
-//     monHou.classList.add('flex')
-//     monHou.style.display='flex'
-//     monHou.style.border='1px solid black'
-//     monHou.style.width='170px'
-//
-//     let month=document.createElement('div')
-//     month.innerText=`Months ${Element.monthDuration}`
-//     month.style.padding='10px'
-//
-//     let hour=document.createElement('div')
-//     hour.innerText=`Hours ${Element.hourDuration}`
-//     hour.style.padding='10px'
-//
-//
-//     let ul=document.createElement('ul')
-//
-//     for (const ulElement of Element.modules) {
-//         let li=document.createElement('li')
-//         li.innerHTML=`<i>${ulElement}</i>`
-//         ul.append(li)
-//
-//     }
-// document.body.append(divWraper)
-//     divWraper.append(tit)
-//     divWraper.append(monHou)
-//     monHou.append(month)
-//     monHou.append(hour)
-//     divWraper.append(ul)
-//
-//
-// }
+for (const Element of coursesArray) {
+    let divWraper=document.createElement('div')
+    divWraper.classList.add('wraper')
+
+
+    let tit=document.createElement('h3')
+    tit.innerText=`${Element.title}`
+
+    let monHou=document.createElement('div')
+    monHou.classList.add('flex')
+    monHou.style.display='flex'
+    monHou.style.border='1px solid black'
+    monHou.style.width='170px'
+
+    let month=document.createElement('div')
+    month.innerText=`Months ${Element.monthDuration}`
+    month.style.padding='10px'
+
+    let hour=document.createElement('div')
+    hour.innerText=`Hours ${Element.hourDuration}`
+    hour.style.padding='10px'
+
+
+    let ul=document.createElement('ul')
+
+    for (const ulElement of Element.modules) {
+        let li=document.createElement('li')
+        li.innerHTML=`<i>${ulElement}</i>`
+        ul.append(li)
+
+    }
+document.body.append(divWraper)
+    divWraper.append(tit)
+    divWraper.append(monHou)
+    monHou.append(month)
+    monHou.append(hour)
+    divWraper.append(ul)
+
+
+}
