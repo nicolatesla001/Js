@@ -248,7 +248,6 @@ for (const listEl of usersList) {
     email.innerText = `Email ${listEl.email}`
 
     let address = document.createElement('div')
-    address.innerText = ` Adress${listEl.address}`
 
     for (const adrs in listEl.address) {
         let street = document.createElement('div')
@@ -268,7 +267,6 @@ for (const listEl of usersList) {
         address.append(zipcode)
 
         let geo = document.createElement('div')
-        address.append(geo)
 
         for (const geoElement in listEl.address) {
             let lat = document.createElement('div')
@@ -289,7 +287,7 @@ for (const listEl of usersList) {
     phone.innerText = `Phone ${listEl.phone}`
 
     let website = document.createElement('div')
-    website.innerText = `Website ${listEl}`
+    website.innerText = `Website ${listEl.website}`
 
     let company = document.createElement('div')
 
