@@ -1,0 +1,9 @@
+.title{
+    cursor: pointer;
+}
+.title ul{
+    display: none;
+}
+.coment{
+    display: none;
+}

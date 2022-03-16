@@ -12,7 +12,7 @@ let n123 = 123
 let PI = 3.14
 let np = 2.7
 let n16 = 16
-let tr = true
+let tru = true
 let fls = false
 
 // Вивести кожну змінну за допомогою: console.log , alert, document.write
@@ -73,7 +73,7 @@ n123 = 128
 PI = 3.1414
 np = 2.77
 n16 = 167
-tr = 'true-true'
+tru = 'true-true'
 fls = 'false-false'
 
 console.log(hi)
