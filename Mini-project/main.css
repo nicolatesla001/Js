@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+h1{
+    justify-content: center;
+    text-align: center;
+}
+.wraper{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.user > a{
+    color: black
+}
+
+.user{
+    height: 50px;
+    width: 250px;
+    background-color: #c5c5c5;
+    margin-left: calc( 25% - 125px );
+    margin-right: calc( 25% - 125px );
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}

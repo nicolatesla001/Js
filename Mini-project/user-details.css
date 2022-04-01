@@ -1,0 +1,27 @@
+.btnPost{
+    width: 90%;
+    margin:0 auto;
+    display: block;
+}
+.wraper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.post{
+    display: flex;
+    flex-wrap: wrap;
+    background: silver;
+    margin:5px;
+    width: 100px;
+    margin-left: calc(10% - 50px);
+    margin-right: calc(10% - 50px);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.post:hover{
+    box-shadow: 0 10px 13px -7px #000000, 0 0 16px 5px rgba(15,14,14,0.34)}
+.btn-post{
+    width: 90px;
+    height: 40px;
+}
